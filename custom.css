@@ -1,0 +1,92 @@
+body{
+  height:100vh
+}
+.topHeader{
+  height: 8rem;
+  background-color: #2d6cb1;
+  color: white;
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+.logoUmich{
+  height:100%;
+  width: auto;
+}
+
+.avatarImg{
+  height: 60px;
+  width: 60px;
+}
+
+.doctorSpec{
+  font-size: 0.8em;
+  margin-top:-10px;
+  position: relative;
+  top:-5px;
+}
+.doctorRating{
+  position: relative;
+  top:-20px;
+}
+
+.docProfile.doctorName, .docProfile.doctorRating, .docProfile.doctorSpec{
+  display: block;
+}
+.myNavbar{
+  height: 30px;
+}
+.text-med{
+  font-size: 1.2em;
+}
+.text-big{
+  font-size:1.5em;
+}
+.text-small{
+  font-size:0.7em;
+}
+
+
+
+::-webkit-input-placeholder {
+    opacity: 0.3;
+}
+
+:-moz-placeholder {
+    opacity: 0.3;
+}
+::-moz-placeholder {
+    opacity: 0.3;
+}
+:-ms-input-placeholder {
+   opacity: 0.3;
+}
+.underline{
+  border-bottom: 2px black;
+  text-decoration: underline;
+}
+
+.icon-link{
+  text-decoration: none;
+  color:white;
+}
+.icon-link:hover{
+  text-decoration: none;
+  color:white;
+}
+
+.docDP{
+  height:150px;
+  width:150px;
+}
+
+.bottomFooter{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #2d6cb1;
+}
+.scheduleLink{
+  line-height: 0.8;
+}

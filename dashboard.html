@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="jquery.auto-complete.css">
+  <script type="text/javascript" src="jquery.auto-complete.min.js"></script>
+
+  <link rel="stylesheet" href="custom.css">
+  <script type="text/javascript">
+    function search(){
+      window.location.href = 'searchpage.html';
+    }
+  </script>
+
+</head>
+<body>
+  <div class="container-fluid topHeader p-2 font-weight-light">
+    <img src="umich-logo.png" class="logoUmich" alt="">
+    University Health Services
+  </div>
+
+  <nav class=" navbar navbar-light bg-light">
+    <div class="myNavbar">
+
+    </div>
+    <a class="navbar-brand" href="dashboard.html"></a>
+  </nav>
+
+  <div class="container">
+    <!-- row 1  searchbar-->
+
+
+    <div class="row mt-3">
+      <div class="col-lg-12">
+        <p class="text-big font-weight-bold">Schedule Appointment</p>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-lg-9">
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2" placeholder="Search by condition or procedure.." id="searchTags">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="button-addon2" onclick="search()">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <a type="button" href="urgentAppointment.html" class="btn btn-warning mb-3" name="button">I need an urgent appointment</a>
+
+      </div>
+    </div>
+
+    <!-- row 2 filters -->
+    <div class="row mb-3 mt-2">
+      <form>
+        <span class="ml-3 mr-3"><b>Filters</b></span>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle btn-sm mr-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Doctor's Gender
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Male</a>
+            <a class="dropdown-item" href="#">Female</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary btn-sm mr-3">Previously Visited</button>
+      </form>
+    </div>
+
+    <div class="row">
+
+
+
+      <div class="col-lg-6">
+        <p class="text-big font-weight-bold">Upcoming appointments</p>
+        <span class="text-medium font-italic font-weight-light">No upcoming appointments</span>
+      </div>
+      <div class="col-lg-6">
+        <p class="text-big font-weight-bold">Reminders</p>
+        <span class="text-medium font-italic font-weight-light">No upcoming reminders</span>
+      </div>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+<!-- <footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 bottomFooter mt-5 p-3">
+        <p class="text-center mt-3 font-weight-light text-light text-small ">Rugved Arte & Neha Dhawan - University of Michigan</p>
+      </div>
+    </div>
+  </div>
+</footer> -->
+</body>
+</html>

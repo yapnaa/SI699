@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to UHS</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAoO9xAUKTfxbtUQ_Tv5PPH6j0Zv0CWGpM",
+    authDomain: "si699-rugvedarte.firebaseapp.com",
+    databaseURL: "https://si699-rugvedarte.firebaseio.com",
+    projectId: "si699-rugvedarte",
+    storageBucket: "si699-rugvedarte.appspot.com",
+    messagingSenderId: "690955931381"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <div class="container-fluid topHeader p-2 font-weight-light">
+    <img src="umich-logo.png" class="logoUmich" alt="">
+    University Health Services
+  </div>
+
+  <nav class=" navbar navbar-light bg-light">
+    <div class="myNavbar">
+
+    </div>
+    <a class="navbar-brand" href="dashboard.html"></a>
+  </nav>
+
+  <div class="container">
+
+      <h3 class="text-center mt-4 font-weight-light">Welcome to UHS</h3>
+
+
+    <form action="personalinfo.html">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-2 mt-4 p-3 border border-grey">
+          video
+
+        </div>
+        <div class="col-lg-4 border border-grey mt-4 p-5">
+          <div class="row">
+            <div class="col-lg-12 mb-3">
+              <p class="text-center text-med">Sign in using your login ID</p>
+            </div>
+            <div class="form-group col-lg-12 ">
+              <!-- <label for="exampleInputEmail1">Uniquename</label> -->
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Uniquename">
+            </div>
+
+            <div class="w-100"></div>
+            <div class="form-group col-lg-12">
+              <!-- <label for="exampleInputPassword1">Password</label> -->
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="w-100"></div>
+
+            <div class="col-lg-12">
+              <a href="#" class="text-left font-weight-light text-small">Forgot Password?</a>
+              <br><br>
+              <button type="submit" class="btn btn-primary col-lg-12">Submit</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>
